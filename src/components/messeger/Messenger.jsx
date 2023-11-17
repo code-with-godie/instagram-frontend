@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import ChatRooms from './ChatRooms';
 import Conversations from './Conversations';
 import ConversationPreview from './ConversationPreview';
-import { useAppContext } from '../../context/AppContext';
 
 const Container = styled.div`
     width: 100%;

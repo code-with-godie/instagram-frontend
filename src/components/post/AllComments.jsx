@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import Model from '../../components/models/Model';
 import DisplayPost from './DisplayPost';
 const AllComments = ({

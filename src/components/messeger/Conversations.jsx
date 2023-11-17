@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import ChatHeader from './ChatHeader';
 import Chats from './Chats';
 import ChatInput from './ChatInput';
-import { messeges } from '../../data/data';
 import { useFetch } from '../../api/useFetch';
 import LoadingAnimation from '../loading/LoadingAnimation';
 
