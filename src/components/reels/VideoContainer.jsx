@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import VideoPlayer from './VideoPlayer';
 import VideoControls from './VideoControls';
-import { users } from '../../data/data';
 
 const Container = styled.div`
     width: 100%;
