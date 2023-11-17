@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Sidenav from '../../components/nav/Sidenav';
 import VideoContainer from '../../components/reels/VideoContainer';
 import BottomNav from '../../components/nav/BottomNav';
-import { posts } from '../../data/data';
 import { useFetch } from '../../api/useFetch';
 import LoadingAnimation from '../../components/loading/LoadingAnimation';
 import Toast from '../../components/models/Toast';
