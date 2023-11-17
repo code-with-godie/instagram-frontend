@@ -34,8 +34,7 @@ const ProtectedLayout = () => {
     };
     useEffect(() => {
         if (user) {
-            // const socket = io(process.env.REACT_APP_BASE_URL);
-            const socket = io('ws://localhost:7000');
+            const socket = io(process.env.REACT_APP_SOCKET_URL);
             updateSocket(socket);
         }
     }, [user]);

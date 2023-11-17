@@ -7,8 +7,14 @@ import { theme } from './theme/theme';
 import Toast from './components/models/Toast';
 
 const App = () => {
-    const { darkMode, toastMessage, showToast, closeToast, toggleVisibilty } =
-        useAppContext();
+    const {
+        darkMode,
+        toastMessage,
+        showToast,
+        closeToast,
+        socket,
+        toggleVisibilty,
+    } = useAppContext();
 
     const handleVisibilty = () => {
         toggleVisibilty(document.hidden);
@@ -20,6 +26,9 @@ const App = () => {
             document.removeEventListener('visibilitychange', handleVisibilty);
         };
     }, []);
+    useEffect(() => {
+        console.log(socket);
+    }, [socket]);
     return (
         <ThemeProvider theme={darkMode ? theme.dark : theme.light}>
             <RouterProvider router={router} />
